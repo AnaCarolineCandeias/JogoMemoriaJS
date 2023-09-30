@@ -5,11 +5,204 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <script src="javascript.js" async></script>
+    <link rel="shortcut icon" href="ImagensJogoMemoriaJS/tarefa.png" type="image/x-icon">
+    <title>Jogo da Memória DEV</title>
 </head>
-<header></header>
+
 <body>
+    <h1 class="page-title">Jogo da Memória DEV</h1>
+    <div class="overlay-text visible">
+        Clique para Começar!
+    </div>
+    <div id="game-over-text" class="overlay-text ">
+        GAME OVER!
+        <span class="overlay-text-small">Clique para Recomeçar!</span>
+    </div>
+    <div id="victory-text" class="overlay-text ">
+        Parabéns, você Ganhou!
+        <span class="overlay-text-small">Clique para Recomeçar!</span>
+    </div>
+    <div class="game-container">
+        <div class="game-info-container">
+            <div class="game-info">
+                Tempo <span id="time-remaining">100</span>
+            </div>
+            <div class="game-info">
+                Movimentos <span id="flips">0</span>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="tarefa-dev" src="ImagensJogoMemoriaJS/tarefa.png" alt="">
+            </div>
+            <div class="card-front card-face">
+                <img class="card-value" src="ImagensJogoMemoriaJS/trabalho-de-casa.png" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="tarefa-dev" src="ImagensJogoMemoriaJS/tarefa.png" alt="">
+            </div>
+            <div class="card-front card-face">
+                <img class="card-value" src="ImagensJogoMemoriaJS/opiniao.png" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="tarefa-dev" src="ImagensJogoMemoriaJS/tarefa.png" alt="">
+            </div>
+            <div class="card-front card-face">
+                <img class="card-value" src="ImagensJogoMemoriaJS/dever-de-casa.png" alt="">
+            </div>
+        </div>
+        <div class="card ">
+            <div class="card-back card-face">
+                <img class="tarefa-dev" src="ImagensJogoMemoriaJS/tarefa.png" alt="">
+            </div>
+            <div class="card-front card-face">
+                <img class="card-value" src="ImagensJogoMemoriaJS/estude.png" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="tarefa-dev" src="ImagensJogoMemoriaJS/tarefa.png" alt="">
+            </div>
+            <div class="card-front card-face">
+                <img class="card-value" src="ImagensJogoMemoriaJS/dever.png" alt="">
+            </div>
+        </div>
+        <div class="card ">
+            <div class="card-back card-face">
+                <img class="tarefa-dev" src="ImagensJogoMemoriaJS/tarefa.png" alt="">
+            </div>
+            <div class="card-front card-face">
+                <img class="card-value" src="ImagensJogoMemoriaJS/livros.png" alt="">
+            </div>
+        </div>
+        <div class="card ">
+            <div class="card-back card-face">
+                <img class="tarefa-dev" src="ImagensJogoMemoriaJS/tarefa.png" alt="">
+            </div>
+            <div class="card-front card-face">
+                <img class="card-value" src="ImagensJogoMemoriaJS/dev.png" alt="">
+            </div>
+        </div>
+        <div class="card ">
+            <div class="card-back card-face">
+                <img class="tarefa-dev" src="ImagensJogoMemoriaJS/tarefa.png" alt="">
+            </div>
+            <div class="card-front card-face">
+                <img class="card-value" src="ImagensJogoMemoriaJS/dever-de-casa (3).png" alt="">
+            </div>
+        </div>
+        <div class="card ">
+            <div class="card-back card-face">
+                <img class="tarefa-dev" src="ImagensJogoMemoriaJS/tarefa.png" alt="">
+            </div>
+            <div class="card-front card-face">
+                <img class="card-value" src="ImagensJogoMemoriaJS/dever-de-casa (1).png" alt="">
+            </div>
+        </div>
+        <div class="card ">
+            <div class="card-back card-face">
+                <img class="tarefa-dev" src="ImagensJogoMemoriaJS/tarefa.png" alt="">
+            </div>
+            <div class="card-front card-face">
+                <img class="card-value" src="ImagensJogoMemoriaJS/dever-de-casa (2).png" alt="">
+            </div>
+        </div>
+        <div class="card ">
+            <div class="card-back card-face">
+                <img class="tarefa-dev" src="ImagensJogoMemoriaJS/tarefa.png" alt="">
+            </div>
+            <div class="card-front card-face">
+                <img class="card-value" src="ImagensJogoMemoriaJS/dever-de-casa (3).png" alt="">
+            </div>
+        </div>
+        <div class="card ">
+            <div class="card-back card-face">
+                <img class="tarefa-dev" src="ImagensJogoMemoriaJS/tarefa.png" alt="">
+            </div>
+            <div class="card-front card-face">
+                <img class="card-value" src="ImagensJogoMemoriaJS/estude.png" alt="">
+            </div>
+        </div>
+        <div class="card ">
+            <div class="card-back card-face">
+                <img class="tarefa-dev" src="ImagensJogoMemoriaJS/tarefa.png" alt="">
+            </div>
+            <div class="card-front card-face">
+                <img class="card-value" src="ImagensJogoMemoriaJS/dever.png" alt="">
+            </div>
+        </div>
+        <div class="card ">
+            <div class="card-back card-face">
+                <img class="tarefa-dev" src="ImagensJogoMemoriaJS/tarefa.png" alt="">
+            </div>
+            <div class="card-front card-face">
+                <img class="card-value" src="ImagensJogoMemoriaJS/dever-de-casa.png" alt="">
+            </div>
+        </div>
+        <div class="card ">
+            <div class="card-back card-face">
+                <img class="tarefa-dev" src="ImagensJogoMemoriaJS/tarefa.png" alt="">
+            </div>
+            <div class="card-front card-face">
+                <img class="card-value" src="ImagensJogoMemoriaJS/opiniao.png" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="tarefa-dev" src="ImagensJogoMemoriaJS/tarefa.png" alt="">
+            </div>
+            <div class="card-front card-face">
+                <img class="card-value" src="ImagensJogoMemoriaJS/dev.png" alt="">
+            </div>
+        </div>
+        <div class="card ">
+            <div class="card-back card-face">
+                <img class="tarefa-dev" src="ImagensJogoMemoriaJS/tarefa.png" alt="">
+            </div>
+            <div class="card-front card-face">
+                <img class="card-value" src="ImagensJogoMemoriaJS/dever-de-casa (2).png" alt="">
+            </div>
+        </div>
+        <div class="card ">
+            <div class="card-back card-face">
+                <img class="tarefa-dev" src="ImagensJogoMemoriaJS/tarefa.png" alt="">
+            </div>
+            <div class="card-front card-face">
+                <img class= "card-value" src="ImagensJogoMemoriaJS/livros.png" alt="">
+            </div>
+        </div>
+        <div class="card ">
+            <div class="card-back card-face">
+                <img class="tarefa-dev" src="ImagensJogoMemoriaJS/tarefa.png" alt="">
+            </div>
+            <div class="card-front card-face">
+                <img class= "card-value" src="ImagensJogoMemoriaJS/trabalho-de-casa.png" alt="">
+            </div>
+        </div>
+        <div class="card ">
+            <div class="card-back card-face">
+                <img class="tarefa-dev" src="ImagensJogoMemoriaJS/tarefa.png" alt="">
+            </div>
+            <div class="card-front card-face">
+                <img class= "card-value" src="ImagensJogoMemoriaJS/dever-de-casa (1).png" alt="">
+            </div>
+        </div>
+        
+
+    </div>
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Design Inspiração- How to Code a Card Matching Game - Web Dev Simplified - Kyle</p>
+            <p>JavaScript Inspiração- How To Code A Card Game In Plain JavaScript - Spooky Halloween Edition- PortEXE - Zack Wilson</p>
+            <h4>Desenvolvido por: Ana Caroline Candeias dos Santos</h4>
+        </div>
+    </footer>
     
-    <script src="javascript.js"></script>
-</body>
+    </body>
 </html>
